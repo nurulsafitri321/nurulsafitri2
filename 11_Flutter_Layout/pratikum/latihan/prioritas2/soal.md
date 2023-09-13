@@ -1,0 +1,1 @@
+2. a. ![Alt text](image.png)
