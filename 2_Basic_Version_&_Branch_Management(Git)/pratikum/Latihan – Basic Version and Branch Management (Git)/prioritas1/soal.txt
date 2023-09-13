@@ -1,0 +1,7 @@
+~ Buatlah sebuah repository pada Github dengan nama repositorynya NamaKelas_NamaKalian, contohnya:
+~ Buat folder didalam repository kalian dengan format seperti dibawah ini.
+  => 2_Basic Version and Branch management
+  => 3_Introduction Mobile App Development
+  => buat folder sesuai dengan section pada
+     platform Alta.id, contohnya seperti dibawah ini
+  => Di dalam foldernya, buatlah sub folder seperti dibawah ini

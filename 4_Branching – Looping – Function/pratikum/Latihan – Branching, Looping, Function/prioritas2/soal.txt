@@ -1,0 +1,13 @@
+Tugas Perulangan (Looping)
+
+1. Buatlah sebuah piramid bintang seperti gambar dibawah ini:
+2. Buatlah sebuah jam pasir seperti pada gambar di bawah ini
+
+Tugas Function
+
+1. Buatlah sebuah function dengan parameter untuk menghitung luas lingkaran. Kemudian function lingkaran tersebut dijalankan pada function main!
+2. Buatlah sebuah function yang dapat menampilkan faktorial dari nilai-nilai di bawah ini:
+    a. 10
+    b. 40
+    c. 50
+
