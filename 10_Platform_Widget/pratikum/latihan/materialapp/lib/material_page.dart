@@ -16,7 +16,8 @@ class HomePage extends StatelessWidget {
         ],
       ),
     ),
-    body: const Center(
+    body: 
+    const Center(
         child: Text('this is MaterialApp'),   
     ),
     bottomNavigationBar: BottomNavigationBar(
