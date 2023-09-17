@@ -16,10 +16,72 @@ class HomePage extends StatelessWidget {
         ],
       ),
     ),
-    body: 
-    const Center(
-        child: Text('this is MaterialApp'),   
-    ),
+    body : ListView(
+        children: [
+          ListTile(
+            leading: Icon(Icons.circle, color: Colors.green,),
+            title: Text('Leane Graham'),
+            subtitle: Text('1-770-736-8031 x56442'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Ervin Howell'),
+            subtitle: Text('010-692-6593 x09125'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Clementine Bauch'),
+            subtitle: Text('1-463-123-4447'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Patricia Lebsack'),
+            subtitle: Text('493-170-9623 x156'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Chelsey Dietrich'),
+            subtitle: Text('(256)954-1289'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Mrs.Dennis Schulist'),
+            subtitle: Text('1-477-935-8478 x6430'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+
+          ListTile(
+            leading: Icon(Icons.star),
+            title: Text('Kurtis Weissnat'),
+            subtitle: Text('210.068.6132'),
+            onTap: () {
+              // Tambahkan aksi ketika ListTile ditekan di sini
+            },
+          ),
+          // Tambahkan lebih banyak ListTile di sini sesuai kebutuhan
+        ],
+      ),
     bottomNavigationBar: BottomNavigationBar(
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
