@@ -18,71 +18,87 @@ class HomePage extends StatelessWidget {
       ),
     ),
     body : ListView(
-        children: [
+          children: const [
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Leane Graham'),
-            subtitle: Text('1-770-736-8031 x56442'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "L",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Leanne Graham"),
+            subtitle: Text("1-770-736-8031 x56442"),
+          ),
+           ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "E",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Ervin Howell"),
+            subtitle: Text("010-692-6593 x09125"),
           ),
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Ervin Howell'),
-            subtitle: Text('010-692-6593 x09125'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "C",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Clementine Bauch"),
+            subtitle: Text("1-463-123-4447"),
           ),
-
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Clementine Bauch'),
-            subtitle: Text('1-463-123-4447'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "P",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Patricia Lebsack"),
+            subtitle: Text("493-170-9623 x156"),
           ),
-
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Patricia Lebsack'),
-            subtitle: Text('493-170-9623 x156'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "C",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Chelsey Dietrich"),
+            subtitle: Text("(247)954-1289"),
           ),
-
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Chelsey Dietrich'),
-            subtitle: Text('(256)954-1289'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "M",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Mrs. Dennis Schulist"),
+            subtitle: Text("1-477-935-8478 x6430"),
           ),
-
           ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Mrs.Dennis Schulist'),
-            subtitle: Text('1-477-935-8478 x6430'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
+            leading: CircleAvatar(
+              backgroundColor: Colors.green,
+              child: Text(
+                "K",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            title: Text("Kurtis Weissnat"),
+            subtitle: Text("210.067.6132"),
           ),
-
-          ListTile(
-            leading: Icon(Icons.circle, color: Colors.green),
-            title: Text('Kurtis Weissnat'),
-            subtitle: Text('210.068.6132'),
-            onTap: () {
-              // Tambahkan aksi ketika ListTile ditekan di sini
-            },
-          ),
-          // Tambahkan lebih banyak ListTile di sini sesuai kebutuhan
         ],
       ),
+          
     bottomNavigationBar: BottomNavigationBar(
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
