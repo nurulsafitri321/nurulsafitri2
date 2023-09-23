@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+        backgroundColor: Color.fromARGB(255, 163, 0, 163),
         title: const Text("Contact"),
       ),
       body: SingleChildScrollView(
