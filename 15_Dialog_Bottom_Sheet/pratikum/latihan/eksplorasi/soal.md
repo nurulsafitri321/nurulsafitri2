@@ -1,0 +1,1 @@
+Pada halaman baru, tampilkan gambar berdasarkan gambar yang dipilih / ditekan.
