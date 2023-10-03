@@ -9,7 +9,7 @@ class DetailImagePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+        backgroundColor: const Color.fromARGB(255, 241, 218, 2),
         title: const Text('Detail Image'),
       ),
       body: SingleChildScrollView(
@@ -26,9 +26,9 @@ class DetailImagePage extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+                  backgroundColor: const Color.fromARGB(255, 236, 196, 15),
                 ),
-                child: const Text('Go Back'),
+                child: const Text('Kembali'),
               ),
             ],
           ),

@@ -42,11 +42,11 @@ class ContactState extends State<Contact> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+        backgroundColor: Color.fromARGB(255, 238, 176, 5),
         title: const Text("Contact"),
       ),
       drawer: Drawer(
-        backgroundColor: const Color.fromRGBO(221, 152, 255, 1),
+        backgroundColor: const Color.fromARGB(255, 255, 228, 152),
         child: ListView(
           children: [
             ElevatedButton(
@@ -54,7 +54,7 @@ class ContactState extends State<Contact> {
                 Navigator.of(context).pushNamed('/gridview');
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+                backgroundColor: const Color.fromARGB(255, 243, 222, 33),
               ),
               child: const Text(
                 'Galeri',
@@ -69,10 +69,10 @@ class ContactState extends State<Contact> {
                 Navigator.of(context).pushNamed('/contact');
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+                backgroundColor: const Color.fromARGB(255, 243, 222, 33),
               ),
               child: const Text(
-                'Contact',
+                'Contacts',
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 20,
@@ -88,12 +88,12 @@ class ContactState extends State<Contact> {
           child: Center(
             child: Column(
               children: [
-                const Icon(Icons.phone_android, size: 48.0),
+                const Icon(Icons.phone, size: 50.0),
                 const SizedBox(
                   height: 15.0,
                 ),
                 const Text(
-                  "Create New Contact",
+                  "Create New Contacts 1",
                   style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
@@ -102,9 +102,9 @@ class ContactState extends State<Contact> {
                 const Padding(
                   padding: EdgeInsets.all(9.0),
                   child: Text(
-                    "Please enter name and telephone number to create a new contact.",
+                    "A dialog is a type of modal windows that appears in front of app content to provide critical information or promt for decision to be made.",
                     style: TextStyle(fontSize: 16.0),
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                   ),
                 ),
                 Form(
@@ -119,7 +119,7 @@ class ContactState extends State<Contact> {
                             hintText: 'Enter your name',
                             border: OutlineInputBorder(),
                             filled: true,
-                            fillColor: Color.fromARGB(81, 173, 33, 243),
+                            fillColor: Color.fromARGB(230, 243, 229, 33),
                           ),
                           validator: (value) {
                             name = value;
@@ -153,7 +153,7 @@ class ContactState extends State<Contact> {
                             hintText: "Enter your Number",
                             border: OutlineInputBorder(),
                             filled: true,
-                            fillColor: Color.fromARGB(81, 173, 33, 243),
+                            fillColor:Color.fromARGB(230, 243, 229, 33),
                           ),
                           validator: (value) {
                             number = value;
@@ -200,7 +200,7 @@ class ContactState extends State<Contact> {
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all<
                                         Color>(
-                                    const Color.fromARGB(255, 173, 33, 243)),
+                                    Color.fromARGB(255, 243, 229, 33)),
                               ),
                               onPressed: () {
                                 if (formKey.currentState!.validate()) {
@@ -251,7 +251,7 @@ class ContactState extends State<Contact> {
                             return ListTile(
                               leading: CircleAvatar(
                                 backgroundColor:
-                                    const Color.fromARGB(255, 173, 33, 243),
+                                    Color.fromARGB(255, 243, 194, 33),
                                 radius: 30,
                                 child: Text(
                                   avatarText,

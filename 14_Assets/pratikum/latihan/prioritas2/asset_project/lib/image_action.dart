@@ -16,49 +16,97 @@ class ImageGridView extends StatelessWidget {
         children: [
           ElevatedButton(
             onPressed: () {
-              _showImageBottomSheet(context, 'assets/rice.jpg');
+              _showImageBottomSheet(context, 'assets/oyen.jpg');
             },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(2),
             ),
             child: Ink.image(
-              image: const AssetImage('assets/rice.jpg'),
+              image: const AssetImage('assets/oyen.jpg'),
               fit: BoxFit.cover,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              _showImageBottomSheet(context, 'assets/food1.jpg');
+              _showImageBottomSheet(context, 'assets/oyen1.jpg');
             },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(2),
             ),
             child: Ink.image(
-              image: const AssetImage('assets/food1.jpg'),
+              image: const AssetImage('assets/oyen1.jpg'),
               fit: BoxFit.cover,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              _showImageBottomSheet(context, 'assets/food2.jpg');
+              _showImageBottomSheet(context, 'assets/oyen2.jpg');
             },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(2),
             ),
             child: Ink.image(
-              image: const AssetImage('assets/food2.jpg'),
+              image: const AssetImage('assets/oyen2.jpg'),
               fit: BoxFit.cover,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              _showImageBottomSheet(context, 'assets/food3.jpg');
+              _showImageBottomSheet(context, 'assets/oyen3.jpg');
             },
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.all(2),
             ),
             child: Ink.image(
-              image: const AssetImage('assets/food3.jpg'),
+              image: const AssetImage('assets/oyen3.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/oyen4.jpg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/oyen4.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/oyen5.jpg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/oyen5.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/oyen1.jpg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/oyen1.jpg'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              _showImageBottomSheet(context, 'assets/oyen3.jpg');
+            },
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.all(2),
+            ),
+            child: Ink.image(
+              image: const AssetImage('assets/oyen3.jpg'),
               fit: BoxFit.cover,
             ),
           ),
@@ -85,7 +133,7 @@ class ShowImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        color: Color.fromRGBO(221, 152, 255, 1),
+        color: Color.fromRGBO(228, 255, 152, 1),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -120,10 +168,10 @@ class ShowImage extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+                    backgroundColor:const Color.fromARGB(255, 248, 185, 12),
                   ),
                   child: const Text(
-                    'iya',
+                    'yes',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
@@ -135,10 +183,10 @@ class ShowImage extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 173, 33, 243),
+                    backgroundColor: const Color.fromARGB(255, 248, 185, 12),
                   ),
                   child: const Text(
-                    'tidak',
+                    'no',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
