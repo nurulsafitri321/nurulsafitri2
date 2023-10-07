@@ -15,7 +15,7 @@ void main() {
         ),
       ],
       child: const MaterialApp(
-        
+        debugShowCheckedModeBanner: false,
         home: ContactScreen(),
       ),
 
