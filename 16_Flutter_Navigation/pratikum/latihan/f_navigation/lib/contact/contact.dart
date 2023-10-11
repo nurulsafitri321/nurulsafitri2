@@ -42,7 +42,7 @@ class ContactState extends State<Contact> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 238, 176, 5),
+        backgroundColor: const Color.fromARGB(255, 238, 176, 5),
         title: const Text("Contact"),
       ),
       drawer: Drawer(
