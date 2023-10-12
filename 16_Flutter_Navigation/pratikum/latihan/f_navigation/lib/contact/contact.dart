@@ -1,3 +1,4 @@
+import 'package:f_navigation/provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
@@ -40,6 +41,8 @@ class ContactState extends State<Contact> {
 
   @override
   Widget build(BuildContext context) {
+    //  final ImageProvider = Provider.of<ImageProvider>(context); //provider
+    // final imageBloc = BlocProvider.of<ImageBloc>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 238, 176, 5),

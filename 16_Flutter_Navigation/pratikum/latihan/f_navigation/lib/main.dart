@@ -1,10 +1,36 @@
 import 'package:f_navigation/contact/contact.dart';
 import 'package:f_navigation/homePage.dart';
 import 'package:flutter/material.dart';
+import 'package:f_navigation/provider/provider.dart';
+import '';
+
+
+
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+//     MultiProvider(
+//       providers: [
+//         ChangeNotifierProvider(create: (_) => const Contact()),
+//         ChangeNotifierProvider(create: (_) => const ImageProvider()),
+//       ],
+//       child: const MyApp(),
+//    )
+//    );
+// }
+
+      MultiBlocProvider(
+          providers: [
+            BlocProvider<ImageBloc>(create: (_) => ImageBloc()),
+            // Di sini Anda dapat menambahkan BlocProvider lain jika diperlukan
+          ],
+          child: const MyApp(),
+        ),
+      );
 }
+
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
