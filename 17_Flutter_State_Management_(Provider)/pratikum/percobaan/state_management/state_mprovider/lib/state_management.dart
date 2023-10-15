@@ -17,9 +17,14 @@ class _StateManagementState extends State<StateManagement> {
       ),
       body: Column(
         children: [
-          Text('$number', style: const TextStyle(fontSize: 30),),
+          Text('$number', 
+          style: const TextStyle(fontSize: 30),),
           ElevatedButton(
-            onPressed: (){},
+            onPressed: (){
+              setState(() {
+                number++;
+              });
+            },
             child: const Text('Tambah'),
           )
         ],
