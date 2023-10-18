@@ -1,50 +1,50 @@
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
-import 'package:rest_api_flutter/main.dart';
+// import 'package:dio/dio.dart';
+// import 'package:flutter/material.dart';
 
-class MyServices {
-  final Dio dio = Dio();
 
-  Future fetchUsers() async {
-    try {
-      final Response response = await dio.get('https://reqres.in/api/users');
-      debugPrint(response.data.toString());
-      return response.data;
-    } catch (e) {
-      rethrow;
-    }
-  }
+// class MyServices {
+//   final Dio dio = Dio();
 
-  Future createUser({
-    required String name,
-    required String job,
-  }) async {
-    try {
-      final Response response = await dio.post(
-        'https://reqres.in/api/users',
-        data: {
-          'name' : name,
-          'job' : job,
-        },
-      );
+//   Future fetchUsers() async {
+//     try {
+//       final Response response = await dio.get('https://reqres.in/api/users');
+//       debugPrint(response.data.toString());
+//       return response.data;
+//     } catch (e) {
+//       rethrow;
+//     }
+//   }
 
-      debugPrint(response.data.toString());
+//   Future createUser({
+//     required String name,
+//     required String job,
+//   }) async {
+//     try {
+//       final Response response = await dio.post(
+//         'https://reqres.in/api/users',
+//         data: {
+//           'name' : name,
+//           'job' : job,
+//         },
+//       );
 
-      return response.data;
-    } catch (e) {
-      rethrow;
-    }
-  }
+//       debugPrint(response.data.toString());
+
+//       return response.data;
+//     } catch (e) {
+//       rethrow;
+//     }
+//   }
   
-  Future deleteUser() async{
-    try {
-      final Response response = await dio.delete('https://reqres.in/api/users/4');
+//   Future deleteUser() async{
+//     try {
+//       final Response response = await dio.delete('https://reqres.in/api/users/4');
 
-      debugPrint(response.data.toString());
+//       debugPrint(response.data.toString());
 
-      return response.data;
-    }catch (e) {
-      rethrow;
-    }
-  }
-}
+//       return response.data;
+//     }catch (e) {
+//       rethrow;
+//     }
+//   }
+// }
