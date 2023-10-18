@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:rest_api_flutter/services.dart';
+import 'package:rest_api_flutter/main.dart';
 
 class MyServices {
   final Dio dio = Dio();
