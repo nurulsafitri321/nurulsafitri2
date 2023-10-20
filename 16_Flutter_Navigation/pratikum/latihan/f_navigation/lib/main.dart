@@ -2,32 +2,33 @@ import 'package:f_navigation/contact/contact.dart';
 import 'package:f_navigation/homePage.dart';
 import 'package:flutter/material.dart';
 import 'package:f_navigation/provider/provider.dart';
-import '';
+//import '';
 
 
 
 
 void main() {
   runApp(
-//     MultiProvider(
-//       providers: [
-//         ChangeNotifierProvider(create: (_) => const Contact()),
-//         ChangeNotifierProvider(create: (_) => const ImageProvider()),
-//       ],
-//       child: const MyApp(),
-//    )
-//    );
-// }
-
-      MultiBlocProvider(
-          providers: [
-            BlocProvider<ImageBloc>(create: (_) => ImageBloc()),
-            // Di sini Anda dapat menambahkan BlocProvider lain jika diperlukan
-          ],
-          child: const MyApp(),
-        ),
-      );
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => const Contact()),
+        ChangeNotifierProvider(create: (_) => const ImageProvider()),
+      ],
+      child: const MyApp(),
+   )
+   );
 }
+
+
+      // MultiBlocProvider(
+      //     providers: [
+      //       BlocProvider<ImageBloc>(create: (_) => ImageBloc()),
+      //       // Di sini Anda dapat menambahkan BlocProvider lain jika diperlukan
+      //     ],
+      //     child: const MyApp(),
+      //   ),
+      // );
+//}
 
 
 
