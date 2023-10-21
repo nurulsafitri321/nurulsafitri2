@@ -1,0 +1,111 @@
+import 'package:flutter/material.dart';
+import 'package:openai/openai.dart';
+
+class PhoneRecommendation extends StatefulWidget {
+  const PhoneRecommendation({Key? key}) : super(key: key);
+
+  @override
+  State<PhoneRecommendation> createState() =>
+      _PhoneRecommendationState();
+}
+
+class _PhoneRecommendationState extends State<PhoneRecommendation> {
+  final apiKey = "<YOUR_API_KEY>";
+  final model = OpenAIModel("davinci-002");
+
+  // Parameter rekomendasi
+  int _hargaMin = 10000000;
+  int _hargaMax = 20000000;
+  int _jumlahKamera = 4;
+  int _kapasitasPenyimpanan = 256;
+
+  // Daftar smartphone yang direkomendasikan
+  List<String> _smartphoneRekomendasi = [];
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Melakukan inisialisasi API OpenAI
+    OpenAI.initialize(apiKey);
+  }
+
+  // Mengambil rekomendasi smartphone
+  Future<void> _getRekomendasi() async {
+    // Mengumpulkan data parameter rekomendasi
+    Map<String, dynamic> dataRekomendasi = {
+      "harga": {"min": _hargaMin, "max": _hargaMax},
+      "kamera": {"jumlah": _jumlahKamera},
+      "penyimpanan": {"kapasitas": _kapasitasPenyimpanan},
+    };
+
+    // Mengirim permintaan rekomendasi ke OpenAI
+    String response = await model.generate(
+      prompt: "Rekomendasikan smartphone yang menggunakan framework flutter berdasarkan data berikut: $dataRekomendasi",
+      maxTokens: 100,
+    );
+
+    // Mengubah respons ke daftar smartphone
+    _smartphoneRekomendasi = response.split(",");
+
+    // Memperbarui tampilan
+    setState(() {});
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Flutter Phone Recommendation",
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Flutter Phone Recommendation"),
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              // Bagian atas
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: ElevatedButton(
+                  onPressed: _getRekomendasi,
+                  child: Text("Mulai"),
+                ),
+              ),
+
+              // Bagian tengah
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: _smartphoneRekomendasi.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(_smartphoneRekomendasi[index]),
+                    );
+                  },
+                ),
+              ),
+
+              // Bagian bawah
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Parameter rekomendasi
+                    Text("Harga: \$${_hargaMin} - \$${_hargaMax}"),
+                    Text("Jumlah kamera: ${_jumlahKamera}"),
+                    Text("Kapasitas penyimpanan: ${_kapasitasPenyimpanan} GB"),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
