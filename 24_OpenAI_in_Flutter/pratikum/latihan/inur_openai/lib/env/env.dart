@@ -1,10 +1,10 @@
-import 'package:envied/envied.dart';
+// import 'package:envied/envied.dart';
 
-part "env.g.dart";
+// part "env.g.dart";
 
-@Envied(path: '.env')
-abstract class Env {
-  @EnviedField(varName: 'OPENAI_API_KEY')
-  static const apikey = _Env.apikey;
+// @Envied(path: '.env')
+// abstract class Env {
+//   @EnviedField(varName: 'OPENAI_API_KEY')
+//   static const apikey = _Env.apikey;
 
-}
+// }
