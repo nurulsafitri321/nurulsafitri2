@@ -29,7 +29,7 @@ class ResultScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  gptResponseData.choices[0].text,
+                  gptResponseData.choices.length > 0? gptResponseData.choices[0].text : "",
                   textAlign: TextAlign.center,
                 )
               ],
