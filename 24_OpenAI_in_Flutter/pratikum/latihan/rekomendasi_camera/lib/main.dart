@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Phone Recommendation'),
+        title: const Text('Phone Recommendation'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -118,28 +118,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextField(
                   controller:
                       pertanyaanController, // Menghubungkan controller ke TextField
-                  decoration: InputDecoration(labelText: 'Masukkan pertanyaan'),
+                  decoration: const InputDecoration(labelText: 'Masukkan pertanyaan'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextField(
                   controller: budgetController,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(labelText: 'Budget'),
+                  decoration: const InputDecoration(labelText: 'Budget'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextField(
                   controller: cameraController,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(labelText: 'Camera (MP)'),
+                  decoration: const InputDecoration(labelText: 'Camera (MP)'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextField(
                   controller: storageController,
                   keyboardType: TextInputType.number,
                   decoration:
-                      InputDecoration(labelText: 'Internal Storage (GB)'),
+                      const InputDecoration(labelText: 'Internal Storage (GB)'),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () {
                     _askGPT();
